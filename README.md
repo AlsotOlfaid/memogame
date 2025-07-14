@@ -4,22 +4,19 @@
 
 ## 📋 Descripción
 
-Memorama es un juego de memoria interactivo desarrollado con [Alpine.js](https://alpinejs.dev) y [Tailwind CSS](https://tailwindcss.com). El objetivo del juego es encontrar todas las parejas de cartas antes de que se acabe el tiempo. El juego incluye múltiples tipos de contenido para las cartas (emojis, imágenes, texto, números) y soporte completo para interacción táctil con drag & drop.
+Memorama es un juego de memoria interactivo desarrollado con [Alpine.js](https://alpinejs.dev) y [Tailwind CSS](https://tailwindcss.com). El objetivo del juego es encontrar todas las parejas de cartas antes de que se acabe el tiempo.
 
 ## ✨ Características
 
-- 🃏 Múltiples tipos de contenido: emojis, imágenes, texto y números
-- 🎯 Configuración flexible del número de pares (4, 6, 8 o 10)
-- 🔄 Soporte para contenido personalizado definido por el usuario
 - ⏱️ Temporizador con pausa/reanudación
-- 📱 Soporte completo para dispositivos táctiles con drag & drop
+- 📱 Soporte completo para dispositivos táctiles
 - 🎭 Animaciones fluidas y feedback visual
 - 🏆 Modales de victoria y derrota con estadísticas
-- 🎨 Diseño moderno y responsivo con Tailwind CSS
+- 🎨 Responsivo con Tailwind CSS
 
 ## 🚀 Instalación
 
-### Requisitos previos
+### Requisitos
 
 - [Node.js](https://nodejs.org/) (v14 o superior)
 - [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/)
@@ -29,8 +26,8 @@ Memorama es un juego de memoria interactivo desarrollado con [Alpine.js](https:/
 1. Clona este repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/memorama.git
-cd memorama
+git clone https://github.com/Petox03/memogame.git
+cd memogame
 ```
 
 2. Instala las dependencias:
@@ -76,22 +73,15 @@ yarn dev
 
 ## 📝 Cómo jugar
 
-1. Selecciona el tipo de contenido para las cartas (emojis, imágenes, texto o números)
-2. Elige el número de pares que deseas jugar (4, 6, 8 o 10)
-3. Opcionalmente, introduce tu propio contenido personalizado separado por comas
-4. Haz clic en "Nuevo Juego" para comenzar
-5. Encuentra todas las parejas antes de que se acabe el tiempo
-6. Puedes pausar el juego en cualquier momento con el botón "Pausar"
-7. En dispositivos táctiles, también puedes arrastrar y soltar las cartas para seleccionarlas
+1. Haz clic en "Nuevo Juego" para comenzar
+2. Encuentra todas las parejas antes de que se acabe el tiempo
+3. Puedes pausar el juego en cualquier momento con el botón "Pausar"
 
 ## 🔧 Personalización
 
 Puedes personalizar varios aspectos del juego:
 
-- **Tipo de contenido**: Elige entre emojis, imágenes, texto o números
-- **Número de pares**: Configura la dificultad cambiando el número de pares
-- **Contenido personalizado**: Introduce tus propios valores separados por comas
-- **Tiempo**: Modifica la variable `timeLeft` en `memorama.js` para cambiar la duración del juego
+- **Número de pares**: Configura la dificultad cambiando el número de pares en la variable `cardValues` en `index.js`
 
 ## 📦 Compilación para producción
 
