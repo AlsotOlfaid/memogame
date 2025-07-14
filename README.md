@@ -1,6 +1,6 @@
 # 🎮 Memorama - Juego de Memoria Interactivo
 
-![Memorama Game](./public/memorama.png)
+![Memorama Game](resources/img/game.png)
 
 ## 📋 Descripción
 
