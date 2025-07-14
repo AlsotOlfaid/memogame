@@ -1,48 +1,110 @@
-# Create Alpine App
+# 🎮 Memorama - Juego de Memoria Interactivo
 
-Create an [Alpine](https://alpinejs.dev) and [Tailwind](https://tailwindcss.com) app in a single command with hot reload 🔥
+![Memorama Game](https://via.placeholder.com/800x400/6D28D9/FFFFFF?text=Memorama+Game)
+
+## 📋 Descripción
+
+Memorama es un juego de memoria interactivo desarrollado con [Alpine.js](https://alpinejs.dev) y [Tailwind CSS](https://tailwindcss.com). El objetivo del juego es encontrar todas las parejas de cartas antes de que se acabe el tiempo. El juego incluye múltiples tipos de contenido para las cartas (emojis, imágenes, texto, números) y soporte completo para interacción táctil con drag & drop.
+
+## ✨ Características
+
+- 🃏 Múltiples tipos de contenido: emojis, imágenes, texto y números
+- 🎯 Configuración flexible del número de pares (4, 6, 8 o 10)
+- 🔄 Soporte para contenido personalizado definido por el usuario
+- ⏱️ Temporizador con pausa/reanudación
+- 📱 Soporte completo para dispositivos táctiles con drag & drop
+- 🎭 Animaciones fluidas y feedback visual
+- 🏆 Modales de victoria y derrota con estadísticas
+- 🎨 Diseño moderno y responsivo con Tailwind CSS
+
+## 🚀 Instalación
+
+### Requisitos previos
+
+- [Node.js](https://nodejs.org/) (v14 o superior)
+- [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/)
+
+### Pasos de instalación
+
+1. Clona este repositorio:
 
 ```bash
-npx create-alpine-app my-app
+git clone https://github.com/tu-usuario/memorama.git
+cd memorama
 ```
 
-![Create Alpine App Screenshot](https://cdn.devdojo.com/images/june2023/create-react-app.jpeg)
-
-The **Create Alpine App** package is similar to [Create React App](https://create-react-app.dev/), except it's for **Alpine**. 
-
-## Installation
-
-Install and get running with the following commands:
+2. Instala las dependencias:
 
 ```bash
-npx create-alpine-app my-app
-cd my-app
+npm install
+# o
+yarn install
+```
+
+3. Inicia el servidor de desarrollo:
+
+```bash
 npm run dev
+# o
+yarn dev
 ```
 
-## Usage
+4. Abre tu navegador en `http://localhost:3000`
 
-Now, you can edit the `index.html` file in the root directory. Alpine is loaded in the `index.js`, and Tailwind is loaded in the `index.css` file. Hot Reloading Enabled 🔥
+## 🛠️ Tecnologías utilizadas
 
-## Hot Reloading
+- [Alpine.js](https://alpinejs.dev) - Framework JavaScript minimalista
+- [Tailwind CSS](https://tailwindcss.com) - Framework CSS utilitario
+- [Vite](https://vitejs.dev) - Herramienta de construcción y desarrollo
 
-You can update the directory or file type that you want the watcher to look for inside of the **handleHotUpdate** method inside of **alpine-vite-plugin.js**.
-
-## Building for production
-
-If you want to distribute this application, you can run:
+## 🏗️ Estructura del proyecto
 
 ```
+/
+├── dist/               # Archivos compilados para producción
+├── resources/
+│   ├── css/            # Estilos CSS
+│   │   └── cards.css   # Estilos específicos para las cartas
+│   └── js/             # Archivos JavaScript
+│       ├── index.js    # Punto de entrada principal
+│       └── memorama.js # Componente Alpine.js del juego
+├── index.html          # Archivo HTML principal
+├── index.js            # Importaciones y configuración
+├── vite.config.js      # Configuración de Vite
+└── README.md           # Este archivo
+```
+
+## 📝 Cómo jugar
+
+1. Selecciona el tipo de contenido para las cartas (emojis, imágenes, texto o números)
+2. Elige el número de pares que deseas jugar (4, 6, 8 o 10)
+3. Opcionalmente, introduce tu propio contenido personalizado separado por comas
+4. Haz clic en "Nuevo Juego" para comenzar
+5. Encuentra todas las parejas antes de que se acabe el tiempo
+6. Puedes pausar el juego en cualquier momento con el botón "Pausar"
+7. En dispositivos táctiles, también puedes arrastrar y soltar las cartas para seleccionarlas
+
+## 🔧 Personalización
+
+Puedes personalizar varios aspectos del juego:
+
+- **Tipo de contenido**: Elige entre emojis, imágenes, texto o números
+- **Número de pares**: Configura la dificultad cambiando el número de pares
+- **Contenido personalizado**: Introduce tus propios valores separados por comas
+- **Tiempo**: Modifica la variable `timeLeft` en `memorama.js` para cambiar la duración del juego
+
+## 📦 Compilación para producción
+
+Para compilar el proyecto para producción, ejecuta:
+
+```bash
 npm run build
+# o
+yarn build
 ```
 
-And your application will be built inside of the `/dist` folder.
+Los archivos compilados se generarán en la carpeta `/dist`.
 
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-## License
+## 📄 Licencia
 
 [MIT](https://choosealicense.com/licenses/mit/)
